@@ -4,16 +4,17 @@ import { Task } from "../model/Task";
 
 export class TestData {
   static categories: Category[] = [
-    {id: 1, title: 'Работа'},
-    {id: 2, title: 'Семья'},
-    {id: 3, title: 'Учеба'},
-    {id: 4, title: 'Отдых'},
-    {id: 5, title: 'Спорт'},
-    {id: 6, title: 'Еда'},
-    {id: 7, title: 'Финансы'},
-    {id: 8, title: 'Гаджеты'},
-    {id: 9, title: 'Здоровье'},
-    {id: 10, title: 'Автомобиль'}
+    {id: 1, title: 'Работа', icon: 'dashboard'},
+    {id: 2, title: 'Семья', icon: 'table_view'},
+    {id: 3, title: 'Учеба', icon: 'receipt_long'},
+    {id: 4, title: 'Отдых', icon: 'view_in_ar'},
+    {id: 5, title: 'Спорт', icon: 'format_textdirection_r_to_l'},
+    {id: 6, title: 'Еда', icon: 'notifications'},
+    {id: 7, title: 'Финансы', icon: 'person'},
+    {id: 8, title: 'Гаджеты', icon: 'login'},
+    {id: 9, title: 'Здоровье', icon: 'assignment'},
+    {id: 10, title: 'Автомобиль', icon: 'directions_car_filled'},
+    {id: 11, title: 'Ремонт', icon: 'construction'}
   ];
 
   static priorities: Priority[] = [

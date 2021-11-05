@@ -6,6 +6,10 @@
    overflow: auto;
 }
 
+.nav-item {
+  cursor: pointer;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 8px;

@@ -29,9 +29,15 @@
                     <td>
                       <p class="text-sm text-secondary mb-0">{{task.title}}</p>
                     </td>
-                    <td class="align-middle text-center text-sm">{{task.category && task.category.title}}</td>
-                    <td class="align-middle text-center text-sm">{{task.priority && task.priority.title}}</td>
-                    <td class="align-middle text-center text-sm">{{task.date && task.date | date: 'short'}}</td>
+                    <td class="align-middle text-center text-sm" [class.novalue]="!task.category">
+                      {{task.category ? task.category!.title : 'no category'}}
+                    </td>
+                    <td class="align-middle text-center text-sm" [class.novalue]="!task.priority">
+                      {{task.priority ? task.priority!.title : 'no title'}}
+                    </td>
+                    <td class="align-middle text-center text-sm" [class.novalue]="!task.date">
+                      {{task.date ? (task!.date | date: 'short') : 'no date'}}
+                    </td>
                     <td class="align-middle text-center text-sm">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1" [checked]="task.completed"

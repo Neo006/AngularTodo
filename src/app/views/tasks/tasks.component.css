@@ -2,8 +2,11 @@
   padding-left: 0;
 }
 
-
 .completed {
   text-decoration: line-through;
   color: #797979;
+}
+
+.novalue {
+  color: #c7c7c7 !important;
 }
